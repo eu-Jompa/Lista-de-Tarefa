@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-primary: #0761c2;
+    --color-secundary: #5DDFE6;
+    --font-primary: "Lusitana", serif;
+}
+
+html,body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-primary);
+    overflow-y: hidden;
+    
+}
+header{
+    display: block;
+    max-width: 15vw;
+    height: 100vh;
+    text-align: center;
+    border-bottom: solid 2px transparent;
+    border-image: linear-gradient(0.25turn, var(--color-primary), var(--color-secundary), rgba(56,2,155,0));
+    border-image-slice: 1;
+    width:100%;;
+    background-image: linear-gradient(90deg, var(--color-secundary),var(--color-primary));
+    
+}
+.h1-logo{
+    font-family: "Lora", serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+nav{
+    
+    
+    flex-direction: row;
+    height: 80%;
+    align-items: center;
+    justify-content: right; 
+}
+
+
+nav ul{
+    
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: right;
+}
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    display: flex;
+}
+.apresentacao-contato{
+    display: block;
+}
+.capaPrincipal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 50px;
+
+}
+.conteudoCapaPrincipal h1{
+    font-size: 60px;
+    font-family: var(--font-primary);
+    text-align: center;
+
+}
+.conteudoCapaPrincipal p{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight:700 ;
+    color: var(--color-primary);
+}
+.conteudoCapaPrincipal i {
+    width: 100px;
+    height: 50px;
+    background-color: var(--color-primary);
+    text-align: center;
+    align-content: center;
+    border: solid 2px var(--color-secundary);
+    color: white;
+
+}
+
+.sobremim{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    background-color: var(--color-primary);
+
+}
+.sobremim section{
+    width: 50vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+}
+.skills{
+    width: 100%;
+
+}
+.skills ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+
+}
+.skills ul li{
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding: 20px;
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+.skills li:hover{
+    background-color: #0761c2;
+}
+
+.skills i{
+    
+    font-size: 80px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(90deg, var(--color-secundary),var(--color-primary));
+}
